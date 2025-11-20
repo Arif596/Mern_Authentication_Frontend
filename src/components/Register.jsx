@@ -35,7 +35,7 @@ const Register = () => {
         navigateTo(`/otp-verfication/${data.email}/${data.phone}`);
       })
       .catch((errors) => {
-        toast.error(errors.response.data.message);
+        toast.error(errors.response?.data?.message);
       });
   };
   return (

@@ -12,7 +12,7 @@ const ForgotPassword = () => {
     e.preventDefault();
     try {
       const res = await axios.post( // Use POST if backend expects
-        "http://localhost:4000/api/v1/user/password/forget",
+        "https://mern-stack-auth-bckend.vercel.app/api/v1/user/password/forget",
         { email },
         { withCredentials: true, headers: { "Content-Type": "application/json" } }
       );

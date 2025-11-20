@@ -6,7 +6,7 @@ const Home = () => {
 
   const fetchUsers = async () => {
     try {
-      const res = await axios.get("http://localhost:4000/api/v1/user/get-all-users", {
+      const res = await axios.get("https://mern-stack-auth-bckend.vercel.app/api/v1/user/get-all-users", {
         withCredentials: true,
       });
       console.log('Api Response',res)
