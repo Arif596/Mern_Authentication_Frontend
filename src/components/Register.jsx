@@ -24,7 +24,7 @@ const Register = () => {
   const handleRegister = async (data) => {
     data.phone = `+92${data.phone}`;
     await axios
-      .post("http://localhost:4000/api/v1/user/register", data, {
+      .post("https://mern-stack-auth-bckend.vercel.app/api/v1/user/register", data, {
         withCredentials: true,
         headers: {
           "Content-Type": "application/json",

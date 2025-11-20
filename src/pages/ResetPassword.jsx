@@ -18,7 +18,7 @@ const ResetPassword = () => {
     e.preventDefault();
     try {
       const res = await axios.put(
-        `http://localhost:4000/api/v1/user/password/reset/${token}`,
+        `https://mern-stack-auth-bckend.vercel.app/api/v1/user/password/reset/${token}`,
         { password, confirmPassword },
         {
           withCredentials: true,
